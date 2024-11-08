@@ -1,13 +1,13 @@
 {
-  "name": "@finsweet/developer-starter",
-  "version": "0.0.0",
-  "description": "Developer starter template for Finsweet projects.",
-  "homepage": "https://github.com/finsweet/developer-starter#readme",
+  "name": "@studioreleif/experquiz",
+  "version": "1.0.0",
+  "description": "ExperQuiz Website",
+  "homepage": "https://github.com/studiorelief/experquiz",
   "license": "ISC",
   "keywords": [],
   "author": {
-    "name": "Finsweet",
-    "url": "https://finsweet.com/"
+    "name": "Studio Relief",
+    "url": "https://www.studiorelief.fr/"
   },
   "repository": {
     "type": "git",
