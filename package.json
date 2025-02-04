@@ -52,7 +52,11 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "@finsweet/ts-utils": "^0.40.0"
+    "@finsweet/ts-utils": "^0.40.0",
+    "@marker.io/browser": "^0.20.2",
+    "gsap": "^3.12.7",
+    "pnpm": "^9.15.3",
+    "swiper": "^11.2.1"
   },
   "engines": {
     "pnpm": ">=9"

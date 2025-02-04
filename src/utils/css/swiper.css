@@ -1,0 +1,5 @@
+.swiper-virtual .swiper-slide {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}

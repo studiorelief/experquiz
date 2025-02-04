@@ -1,0 +1,38 @@
+.temoignages-cards_component .temoignages-cards_logo {
+  transition: scale 0.2s ease-out;
+}
+
+.temoignages-cards_component:hover .temoignages-cards_logo {
+  scale: 0.9;
+}
+
+.temoignages-cards_component .temoignages-cards_cover-hover-wrapper {
+  transition: opacity 0.4s ease-out;
+}
+
+.temoignages-cards_component:hover .temoignages-cards_cover-hover-wrapper {
+  opacity: 1;
+}
+
+/* Témoignages card */
+.temoignages-cards_rich-text h3 sup,
+.temoignages-cards_rich-text h2 sup {
+  color: var(--text-color--text-red);
+  font-size: var(--font-size--text-medium);
+  font-weight: 700;
+  background-clip: text;
+  top: -0em !important;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--text-color--text-red);
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  margin-right: 0.5rem;
+}
+
+.temoignages-card_rich-text.is-main.w-richtext p {
+  padding-bottom: 1.875rem;
+}

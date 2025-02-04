@@ -1,0 +1,8 @@
+/* Formations card */
+.formations-cards_rich-text.w-richtext h3 sup {
+  color: var(--text-color--text-red);
+  font-size: var(--font-size--text-medium);
+  font-weight: 700;
+  background-clip: text;
+  top: -0em !important;
+}

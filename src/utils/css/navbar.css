@@ -1,0 +1,83 @@
+/* gestion responsive */
+@media screen and (max-width: 73.5rem) {
+  .navbar_desktop {
+    display: none;
+  }
+  .navbar_mobile {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 31.25rem) {
+  .navbar_button-wrapper {
+    display: none;
+  }
+}
+
+.navbar_dropdown_list {
+  width: 10rem;
+}
+
+.navbar_dropdown_list.is-lang {
+  width: 100%;
+}
+
+/* Dropdonw PC animation */
+.navbar_dropdown_toggle.w-dropdown-toggle.w--open .navbar_dropdown_icon-top {
+  display: block;
+  opacity: 0;
+  transform: translateY(2rem);
+  animation: dropdownOpen 0.2s forwards;
+}
+
+.navbar_dropdown_list.w-dropdown-list.w--open {
+  opacity: 0;
+  transform: translateY(2rem);
+  animation: dropdownOpen 0.2s forwards;
+}
+
+@keyframes dropdownOpen {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Arrow big cards animation */
+.navbar_dropdown_cards-big .icon-1x1-small.text-color-pink {
+  transform: translateX(0rem);
+  transition: transform 0.2s ease-in;
+}
+
+.navbar_dropdown_cards-big:hover .icon-1x1-small.text-color-pink {
+  transform: translateX(1rem);
+}
+
+/* Arrow small cards animation */
+.navbar_dropdown_cards-small .icon-1x1-small.opacity-20,
+.navbar_dropdown_cards-small .display-inlineflex.is-vertical {
+  transform: translateX(0rem);
+  transition: transform 0.2s ease-in;
+}
+
+.navbar_dropdown_cards-small:hover .icon-1x1-small.opacity-20 {
+  transform: translateX(0.5rem);
+}
+
+.navbar_dropdown_cards-small:hover .display-inlineflex.is-vertical {
+  transform: translateX(0.25rem);
+}
+
+/* Nav with current Link  */
+.navbar_link_dropdown:has(.w--current) .navbar_dropdown_toggle {
+  color: var(--text-color--text-full-black);
+  font-weight: 700;
+}
+
+.navbar_icon {
+  transition: transform 0.2s ease-in;
+}
+
+.navbar_dropdown_toggle:hover .navbar_icon {
+  transform: rotate(-180deg);
+}
