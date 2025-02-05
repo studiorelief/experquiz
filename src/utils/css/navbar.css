@@ -23,17 +23,19 @@
 }
 
 /* Dropdonw PC animation */
-.navbar_dropdown_toggle.w-dropdown-toggle.w--open .navbar_dropdown_icon-top {
-  display: block;
-  opacity: 0;
-  transform: translateY(2rem);
-  animation: dropdownOpen 0.2s forwards;
-}
+@media screen and (min-width: 61.9375rem) {
+  .navbar_dropdown_toggle.w-dropdown-toggle.w--open .navbar_dropdown_icon-top {
+    display: block;
+    opacity: 0;
+    transform: translateY(2rem);
+    animation: dropdownOpen 0.2s forwards;
+  }
 
-.navbar_dropdown_list.w-dropdown-list.w--open {
-  opacity: 0;
-  transform: translateY(2rem);
-  animation: dropdownOpen 0.2s forwards;
+  .navbar_dropdown_list.w-dropdown-list.w--open {
+    opacity: 0;
+    transform: translateY(2rem);
+    animation: dropdownOpen 0.2s forwards;
+  }
 }
 
 @keyframes dropdownOpen {

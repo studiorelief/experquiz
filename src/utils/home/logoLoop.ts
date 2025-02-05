@@ -23,6 +23,17 @@ export function swiperLogoLoop() {
       mousewheel: {
         forceToAxis: true,
       },
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 4,
+        },
+        992: {
+          slidesPerView: 6,
+        },
+      },
     });
   });
 }
