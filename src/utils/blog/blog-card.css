@@ -20,12 +20,12 @@
   transform: translateX(0rem);
 }
 
-.quiz-card_icon-wrapper {
+.blog-card_icon-wrapper {
   scale: 1;
   transition: scale 0.2s ease-out;
 }
 
-.quiz-card_button:hover .quiz-card_icon-wrapper {
+.blog-card_button:hover .blog-card_icon-wrapper {
   scale: 1.1;
   background-color: var(--background-color--background-primary);
 }

@@ -12,6 +12,7 @@ import { ctaPictoLoop, homeTextAnimation } from '$utils/home/gsapHome';
 import { swiperLogoLoop } from '$utils/home/logoLoop';
 import { showHomeVideoPopup } from '$utils/home/popup';
 import { quizCards } from '$utils/home/quizCards';
+import { showLivreBlancPopup } from '$utils/livre-blanc/popup';
 import { calcCardPrice, calcFormPrice } from '$utils/price/priceLogic';
 import { storyLineAnimation } from '$utils/qui-sommes-nous/gsapLine';
 import { showTemoignagePopup, swiperTemoignagePopup } from '$utils/temoignages/popup';
@@ -47,7 +48,10 @@ window.Webflow.push(() => {
   quizCards();
 
   // Parallax
-  globalParallax();
+
+  if (window.innerWidth > 768) {
+    globalParallax();
+  }
 
   // review Masonry layout
 
@@ -89,6 +93,14 @@ window.Webflow.push(() => {
   /*
   ! Fonctionnalités
   */
+
+  /*
+  ! Livre blanc
+  */
+
+  if (window.location.pathname.includes('livres-blancs')) {
+    showLivreBlancPopup();
+  }
 
   /* 
   ! Blog

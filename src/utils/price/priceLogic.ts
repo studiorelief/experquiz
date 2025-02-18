@@ -12,11 +12,11 @@ export function calcCardPrice() {
   if (!rangeSlideNumber || !silverPriceElement || !goldPriceElement) return;
 
   // Pricing parameters
-  const monthlyPricing = {
+  const annualPricing = {
     p1: 0.856,
     p2: 0.46,
-    nx: 0.0004624063913,
-    chunk: 6.5,
+    nx: 0.000867518373667015,
+    chunk: 18,
   };
 
   function updatePrices() {
@@ -27,9 +27,9 @@ export function calcCardPrice() {
 
     // Calculate base price using formula
     const basePrice =
-      ((monthlyPricing.p1 - monthlyPricing.p2) * Math.exp(-monthlyPricing.nx * (numUsers - 1)) +
-        monthlyPricing.p2) *
-      monthlyPricing.chunk;
+      ((annualPricing.p1 - annualPricing.p2) * Math.exp(-annualPricing.nx * (numUsers - 1)) +
+        annualPricing.p2) *
+      annualPricing.chunk;
 
     // Calculate silver and gold prices
     const silverPrice = round2(basePrice + 0.005);

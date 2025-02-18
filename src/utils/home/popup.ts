@@ -33,6 +33,14 @@ export function showHomeVideoPopup() {
       popupWrapper.style.opacity = '0';
       popupContent.style.transform = 'translateY(2rem)';
 
+      // Stop video when closing popup
+      const videoElement = document.querySelector(
+        '.w-embed-youtubevideo.home_hero_youtube-video > iframe'
+      );
+      if (videoElement instanceof HTMLIFrameElement) {
+        videoElement.src = videoElement.src;
+      }
+
       setTimeout(() => {
         popupWrapper.style.display = 'none';
       }, 300);
