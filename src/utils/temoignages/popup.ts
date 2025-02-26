@@ -18,15 +18,15 @@ export function swiperTemoignagePopup() {
       loop: true,
       slidesPerView: 'auto',
       spaceBetween: 0,
-      speed: 1500,
+      speed: 750,
       //   mousewheel: {
       //     forceToAxis: true,
       //     invert: false,
       //     axis: 'x',
       //   },
       navigation: {
-        nextEl: '#temoignage-right',
-        prevEl: '#temoignage-left',
+        nextEl: '#temoignage-right, #temoignage-right-bottom',
+        prevEl: '#temoignage-left, #temoignage-left-bottom',
       },
     });
   });
