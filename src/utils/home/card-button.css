@@ -1,5 +1,6 @@
 .quiz-card_component .quiz-card_button,
-.quiz-card-small_component .quiz-card_button {
+.quiz-card-small_component .quiz-card_button,
+.livre-blanc_component .quiz-card_button {
   opacity: 0;
   transition: opacity 0.2s ease-out;
 }
@@ -36,4 +37,15 @@
 
 .blog-card_component:hover .blog-card_asset {
   scale: 1;
+}
+
+/* Livre Blanc */
+
+/* .livre-blanc_component .quiz-card_button {
+  opacity: 0;
+  transition: opacity 0.2s ease-out;
+} */
+
+.livre-blanc_component:hover .quiz-card_button {
+  opacity: 1;
 }
