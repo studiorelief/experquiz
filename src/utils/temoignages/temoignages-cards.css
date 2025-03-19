@@ -7,7 +7,7 @@
 }
 
 .temoignages-cards_component .temoignages-cards_cover-hover-wrapper {
-  transition: opacity 0.4s ease-out;
+  transition: opacity 1s ease-out;
 }
 
 .temoignages-cards_component:hover .temoignages-cards_cover-hover-wrapper {

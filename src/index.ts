@@ -69,24 +69,24 @@ window.Webflow.push(() => {
   /*
   ! Fonctionnalités
   */
-  if (window.location.pathname.includes('/fonctionnalites')) {
+  if (window.location.pathname.includes('features')) {
     servicesCardsAnimation();
   }
 
   /* 
   ! Témoignages 
   */
-  if (window.location.pathname.includes('temoignages')) {
+  if (window.location.pathname.includes('testimonials')) {
     swiperTemoignagePopup();
     showTemoignagePopup();
     heroDecoAnimation();
   }
 
-  if (window.location.pathname.includes('qui-sommes-nous')) {
+  if (window.location.pathname.includes('about-us')) {
     storyLineAnimation();
   }
 
-  if (window.location.pathname.includes('webinaires')) {
+  if (window.location.pathname.includes('webinars')) {
     webinairesCard();
   }
 
@@ -98,7 +98,7 @@ window.Webflow.push(() => {
   ! Livre blanc
   */
 
-  if (window.location.pathname.includes('livres-blancs')) {
+  if (window.location.pathname.includes('whitepapers')) {
     showLivreBlancPopup();
   }
 
@@ -111,7 +111,7 @@ window.Webflow.push(() => {
   }
 
   /* Pricing */
-  if (window.location.pathname.includes('offres-et-tarifs')) {
+  if (window.location.pathname.includes('pricing')) {
     calcCardPrice();
     calcFormPrice();
   }
