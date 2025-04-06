@@ -3,6 +3,7 @@ import './index.css';
 import { swiperBlogOthers } from '$utils/blog/swiperBlog';
 import { tradMonth } from '$utils/blog/tradDate';
 import { servicesCardsAnimation } from '$utils/fonctionnalites/gsapCards';
+import { controlVisibility } from '$utils/global/controlVisibility';
 import { globalParallax } from '$utils/global/globalParallax';
 import loadScript from '$utils/global/loadScript';
 import { initMarker } from '$utils/global/marker';
@@ -46,6 +47,9 @@ window.Webflow.push(() => {
 
   // Cards quiz
   quizCards();
+
+  // Control visibility of elements based on URL language path
+  controlVisibility();
 
   // Parallax
 
