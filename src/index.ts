@@ -14,6 +14,7 @@ import { swiperLogoLoop } from '$utils/home/logoLoop';
 import { showHomeVideoPopup } from '$utils/home/popup';
 import { quizCards } from '$utils/home/quizCards';
 import { showLivreBlancPopup } from '$utils/livre-blanc/popup';
+import { ctaAnimation } from '$utils/price/ctaAnimation';
 import { calcCardPrice, calcFormPrice } from '$utils/price/priceLogic';
 import { storyLineAnimation } from '$utils/qui-sommes-nous/gsapLine';
 import { showTemoignagePopup, swiperTemoignagePopup } from '$utils/temoignages/popup';
@@ -118,5 +119,6 @@ window.Webflow.push(() => {
   if (window.location.pathname.includes('pricing')) {
     calcCardPrice();
     calcFormPrice();
+    ctaAnimation();
   }
 });

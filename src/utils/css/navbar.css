@@ -83,3 +83,22 @@
 .navbar_dropdown_toggle:hover .navbar_icon {
   transform: rotate(-180deg);
 }
+
+/* Arrow cards services */
+[data-wf--cc---component-navbar-icon-simple--variant='is-small-services']
+  .icon-1x1-small.opacity-20,
+[data-wf--cc---component-navbar-icon-simple--variant='is-small-services']
+  .display-inlineflex.is-vertical {
+  transform: translateX(0rem);
+  transition: transform 0.2s ease-in;
+}
+
+[data-wf--cc---component-navbar-icon-simple--variant='is-small-services']:hover
+  .icon-1x1-small.opacity-20 {
+  transform: translateX(0.5rem);
+}
+
+[data-wf--cc---component-navbar-icon-simple--variant='is-small-services']:hover
+  .display-inlineflex.is-vertical {
+  transform: translateX(0.25rem);
+}

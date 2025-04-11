@@ -26,7 +26,6 @@ export function controlVisibility(): void {
     hideEsElements.forEach((element) => {
       (element as HTMLElement).style.display = isSpanish ? 'none' : '';
     });
-
     hideAllElements.forEach((element) => {
       (element as HTMLElement).style.display = isEnglish || isSpanish ? 'none' : '';
     });
