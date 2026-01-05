@@ -13,8 +13,8 @@ export function calcCardPrice() {
 
   // Pricing parameters
   const annualPricing = {
-    p1: 0.856,
-    p2: 0.46,
+    p1: 0.876,
+    p2: 0.471,
     nx: 0.000867518373667015,
     chunk: 18,
   };
@@ -60,8 +60,8 @@ export function calcFormPrice() {
 
   // Pricing parameters
   const modePricing = {
-    month: { p1: 0.856, p2: 0.46, nx: 0.0004624063913, chunk: 6.5 },
-    annual: { p1: 0.856, p2: 0.46, nx: 0.000867518373667015, chunk: 18 },
+    month: { p1: 0.876, p2: 0.471, nx: 0.0004624063913, chunk: 6.5 },
+    annual: { p1: 0.876, p2: 0.471, nx: 0.000867518373667015, chunk: 18 },
   };
 
   function calculerTotaux(formule: 'gold' | 'silver') {
@@ -80,8 +80,8 @@ export function calcFormPrice() {
     const coeffMode = formule === 'gold' ? 1.3 : 1;
 
     // Calculate monthly and yearly prices
-    let prixMensuel = 5.57;
-    let prixAnnuel = 15.41;
+    let prixMensuel = 5.7;
+    let prixAnnuel = 15.77;
 
     if (licencesMensuellesNb >= 0) {
       const pricing = modePricing.month;
